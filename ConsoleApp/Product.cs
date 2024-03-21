@@ -16,12 +16,10 @@ namespace ConsoleApp
             Name = name;
             Price = price;
         }
-
         public static List<Product> FilterProductsByPrice(List<Product> products, int priceThreshold)
         {
             return products.Where(product => product.Price > priceThreshold).ToList();
         }
-
         public static void ProcessProducts()
         {
             List<Product> productsList = new List<Product>

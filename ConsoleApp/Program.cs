@@ -27,7 +27,9 @@ namespace ConsoleApp
             List<string> names = new List<string> { "Brenda", "Kristina", "Anna", "Nik", "Hugo", "Alice", "Selena" };
             Task6.DisplaySortedNamesByLength(names);
 
+
             Product.ProcessProducts();
+
 
             Console.ReadLine();
         }
