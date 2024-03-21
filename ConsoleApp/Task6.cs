@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp
 {
-    internal class Task6
+    public class Task6
     {
 //  Сортировка имен по длине:
 //•	У вас есть список имен: `Brenda, Kristina, Anna, Nik, Hugo, Alice, Selena`.

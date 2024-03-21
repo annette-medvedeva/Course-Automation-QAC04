@@ -6,19 +6,20 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp
 {
-    internal class Task5
+    public class Task5
     {
         //Объединение списков имен и фильтрация по предпоследней букве:
         //•	Даны два списка имен: `Igor, Vasya, Alex` и `Nikita, Yura, Sergey`.
         //•	Объедините эти списки в один и найдите в нём имена, которые не заканчиваются на букву "а".
         //•	Выведите их в обратном порядке.
 
-        private static IEnumerable<string> FilterAndReverseNames(List<string> firstNames, List<string> secondNames)
+        public static IEnumerable<string> FilterAndReverseNames(List<string> firstNames, List<string> secondNames)
         {
             var combinedNames = firstNames.Concat(secondNames);
-            var filteredNames = combinedNames.Where(name => name[name.Length - 2] != 'a');
+            var filteredNames = combinedNames.Where(name => !name.EndsWith("a"));
             return filteredNames.Reverse();
         }
+
         public static void DisplayFilteredAndReversedNames(List<string> firstNames, List<string> secondNames)
         {
             var filteredAndReversedNames = FilterAndReverseNames(firstNames, secondNames);

@@ -12,7 +12,7 @@ namespace ConsoleApp
         {
             int[] numbers = { 11, -21, 64, 59, 11, 0, -7, 53, -31, 1 };
             int[] numbers2 = { 11, 23, 60, 57, 62, 17, 42, 34, 123 };
-            Task1.SelectNumber(numbers);
+            Task1.SelectNumberPositive(numbers);
             Task2.EvenNumbers(numbers2);
 
             string word = "automation";
